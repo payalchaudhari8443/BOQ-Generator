@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+h1, h2 {
+    margin: 10px 0;
+}
+
+h1 input[type="text"] {
+    font-weight: bold;
+    text-align: center;
+    width: 400px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #fff;
+    color: #333;
+}
+
+.offer {
+    font-weight: bold;
+    text-align: center;
+}
+
+section {
+    padding: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ddd;
+    font-size: 12px;
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
+
+input[type="text"], input[type="number"] {
+    width: 150px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin: 0 5px;
+}
+
+.download-section {
+    text-align: center;
+    min-height: 100px;
+    margin-bottom: 50px;
+}
+
+.download-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.download-btn {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.download-btn img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.download-btn:hover {
+    background-color: #0056b3;
+}
+
+.notes-section ul {
+    padding-left: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

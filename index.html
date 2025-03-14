@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jain Residence - KNX Techno Commercial Offer</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Include jsPDF and jspdf-autotable for dynamic PDF generation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.23/jspdf.plugin.autotable.min.js"></script>
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Messung Systems Logo" class="logo">
+        <h1><input type="text" id="residence" value="Jain Residence, Kalpataru Avana, Parel" onchange="updateResidence()"></h1>
+        <p class="offer">(Messung Ourican) KNX Techno Commercial Offer</p>
+        <p>MESSUNG SYSTEMS PVT. LTD.<br>501-503 Sky Vista, Viman Nagar,<br>Pune, India - 411 014.</p>
+        <p>Date: <input type="text" id="date" value="22/01/2025"></p>
+        <p>Quotation No: <input type="text" id="quotationNo" value="MHA/PC/25/001"></p>
+    </header>
+    <main>
+        <!-- Bill of Quantities -->
+        <section class="boq-section">
+            <h2>Bill of Quantities</h2>
+            <table id="boq-table">
+                <thead>
+                    <tr>
+                        <th>Sr No</th>
+                        <th>Image</th>
+                        <th>Model No</th>
+                        <th>Description</th>
+                        <th>Qty</th>
+                        <th>Unit Price</th>
+                        <th>Amount</th>
+                    </tr>
+                </thead>
+                <tbody id="boq-body"></tbody>
+            </table>
+            <p><strong>Total Value:</strong> <span id="total-value">0</span></p>
+            <p><strong>GST 18%:</strong> <span id="gst-value">0</span></p>
+            <p><strong>Total Project Cost:</strong> <span id="total-cost">0</span></p>
+        </section>
+
+        <!-- Notes and Terms -->
+        <section class="notes-section">
+            <h2>Notes & Terms & Conditions</h2>
+            <ul>
+                <li>BOQ Devices Quantity May Change Based Upon Final Site Condition & Client Specifications</li>
+                <li>Stabilizer and UPS backup required for Automation System.</li>
+                <li>Additional Licence Application Purchase In Client Scope</li>
+                <li>Automation DB in client scope.</li>
+                <li>2M metal conceal box required for front end devices is in client scope.</li>
+                <li>Technical specification of lighting fixtures required from respective agencies.</li>
+                <li>Shutter motor is in client scope and its technical specifications are required.</li>
+                <li>AC model number or remote model number is compulsory for automation integration.</li>
+                <li>DALI Driver & wiring in client's scope.</li>
+                <li>Networking in client’s scope.</li>
+                <li>CAT6 cable, Cable laying also Conventional switches and push buttons is in client scope and continuity testing must be approved by electrician.</li>
+                <li>Messung Electrician/Engineers Outstation Travel + Lodging + Boarding At Actuals In Client/System Integrator Scope.</li>
+                <li>Material Delivery: 8-12 Weeks from the date of confirmation and advance payment.</li>
+                <li>Material Payment 100% advance payment with Purchase Order.</li>
+                <li>Warranty: 2 Year from the date of material delivery.</li>
+            </ul>
+        </section>
+
+        <!-- Download Section -->
+        <section class="download-section">
+            <h2>Download BOQ</h2>
+            <div class="download-buttons">
+                <button class="download-btn" onclick="downloadPDF('BOQ_Source1.pdf')">
+                    <img src="images/download_icon.png" alt="Download Icon"> Source 1
+                </button>
+                <button class="download-btn" onclick="downloadPDF('BOQ_Source2.pdf')">
+                    <img src="images/download_icon.png" alt="Download Icon"> Source 2
+                </button>
+                <button class="download-btn" onclick="downloadPDF('BOQ_Source3.pdf')">
+                    <img src="images/download_icon.png" alt="Download Icon"> Source 3
+                </button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 Messung Systems Pvt. Ltd. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
